@@ -1,0 +1,28 @@
+
+<div class="container">
+        <div style="text-align: center">
+         <h1 class="h2"> Lista De Libros</h1> 
+        </div>
+    <table class="table table-dark table-hover">
+    <thead>
+        <tr >
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Precio</th>
+            <th>Popular</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let libro of libros">
+            <td>{{libro.id}}</td>
+            <td>{{libro.title}}</td>
+            <td>{{libro.precio}}</td>
+            <td>{{libro.popular}} </td>
+            <td>Editar</td>
+            <td>Eliminar</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
